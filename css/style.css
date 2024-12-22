@@ -1,0 +1,388 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/background.png') repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.header {
+    position: relative;
+    background: url('header-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: left;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 2.5em;
+}
+
+.header .subtext {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 1em;
+}
+
+.nav-bar {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+.cta-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.cta-button:hover {
+    background-color: #ff7700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.search-icon {
+    font-size: 1.2em;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.main-menu {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+    margin-top: 0;
+}
+
+.main-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+}
+
+.main-menu a:hover {
+    text-decoration: underline;
+}
+
+.main-section {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: rgba(11, 65, 128, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar .block {
+    margin-bottom: 20px;
+    background-color: #004080;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar .block h4 {
+    margin: 0 0 10px;
+}
+
+.sidebar .block p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .block img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar .block a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #551a8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sidebar .block a:hover {
+    background-color: #663399;
+}
+
+.sidebar .footer-button {
+    background-color: #551a8b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sidebar .footer-button:hover {
+    background-color: #663399;
+}
+
+.content {
+    flex-grow: 1;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background-color: rgba(0, 51, 102, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card h4 {
+    margin: 10px 0;
+}
+
+.card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #551a8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.footer-text {
+    text-align: left;
+    margin: 20px;
+}
+
+.footer-links {
+    text-align: right;
+    margin: 20px;
+    padding-top: 100px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    top: -50px;
+    width: 100%;
+}
+
+.statistics .stat-item {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+
+.statistics .stat-item h4 {
+    margin: 10px 0;
+    color: white;
+    background-color: #334455;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.full-width-image {
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.roots {
+    position: absolute;
+    margin-left: 90%;
+    margin-bottom: 10%;
+}
+
+.lesson-summary {
+    background-color: rgba(0, 51, 102, 0.8);
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    grid-column: span 2;
+}
+
+.lesson-summary h4 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.lesson-summary p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.lesson-summary a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #551a8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.lesson-summary a:hover {
+    background-color: #663399;
+}
+
+.rating-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    grid-column: span 2;
+}
+
+.rating-card {
+    width: 30%;
+    background-color: rgba(0, 51, 102, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.rating-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.rating-card h4 {
+    margin: 10px 0;
+}
+
+.rating-card p {
+    margin: 10px 0;
+}
+
+.rating-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #551a8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sidebar2 {
+    width: 20%;
+    background-color: rgba(11, 65, 128, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar2 .block2 {
+    margin-bottom: 20px;
+    background-color: #004080;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar2 a {
+    color: rgb(28, 104, 175);
+}
+
+.sidebar2 .block2 h4 {
+    margin: 0 0 10px;
+}
+
+.content2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content2 .about {
+    width: 75%;
+    background-color: rgba(49, 20, 155, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
